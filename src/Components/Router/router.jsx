@@ -3,6 +3,11 @@ import ErrorPage from "../ErrorPage/ErrorPage";
 import Root from "../Root/Root";
 import Chart from "../Chart/Chart";
 import Form from "../Form/Form";
+import AvgGrade from "../Chart/OtherComparism/avgGrade";
+import PassingRate from "../Chart/OtherComparism/PassingRate";
+import AttendanceRate from "../Chart/OtherComparism/AttendanceRate";
+import FailureRate from "../Chart/OtherComparism/FailureRate";
+import GraduationRate from "../Chart/OtherComparism/graduationRate";
 
 const router = createBrowserRouter([
   {
@@ -11,16 +16,32 @@ const router = createBrowserRouter([
     errorElement: <ErrorPage />,
     children: [
       {
-        path: "/",
-        element: <Chart/>,
+        path: "/chart",
+        element: <Chart />,
       },
       {
         path: "/form",
         element: <Form />,
       },
       {
-        path: "/chart",
-        element: <Chart />,
+        path: "/avgGrade",
+        element: <AvgGrade />,
+      },
+      {
+        path: "/passingRate",
+        element: <PassingRate />,
+      },
+      {
+        path: "/attendanceRate",
+        element: <AttendanceRate />,
+      },
+      {
+        path: "/failureRate",
+        element: <FailureRate />,
+      },
+      {
+        path: "/graduationRate",
+        element: <GraduationRate />,
       },
     ],
   },

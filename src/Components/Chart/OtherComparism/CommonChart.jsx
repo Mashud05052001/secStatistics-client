@@ -1,10 +1,9 @@
 import { BarChart, Bar, XAxis, YAxis, CartesianGrid, Tooltip, Legend } from 'recharts';
 
 // eslint-disable-next-line react/prop-types
-const Barchart1 = ({data}) => {
-    console.log('data', data);
+const CommonChart = ({data,showingKey,isPercentage}) => {
     return (
-        <div className='mt-20 lg:mt-0  mx-auto'>
+        <div className=' mt-5 w-[100%] md:w-[55%] mx-auto'>
             <BarChart
                 width={500}
                 height={300}
@@ -18,14 +17,24 @@ const Barchart1 = ({data}) => {
             >
             <CartesianGrid strokeDasharray="3 3" />
             <XAxis dataKey="name" />
-            <YAxis />
-            <Tooltip />
+            
+            <Tooltip/>
             <Legend />
-            <Bar dataKey="Desire" fill="#8884d8" />
-            <Bar dataKey="Current" fill="#82ca9d" />
+            {
+                isPercentage ? 
+                    <>
+                        <Bar dataKey={showingKey} fill="#8884d8" unit={'%'}/>
+                        <YAxis unit={'%'}/>
+                    </>
+                    :
+                    <>
+                        <Bar dataKey={showingKey} fill="#8884d8"/>
+                        <YAxis/>
+                    </>
+            }
             </BarChart>
         </div>
     );
 };
 
-export default Barchart1;
+export default CommonChart;

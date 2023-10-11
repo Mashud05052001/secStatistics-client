@@ -1,3 +1,4 @@
+/* eslint-disable react/prop-types */
 import { Cell, Legend, Pie, PieChart, Tooltip } from 'recharts';
 
 // eslint-disable-next-line react/prop-types

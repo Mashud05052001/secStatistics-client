@@ -8,7 +8,7 @@ const Header = () => {
   const headerNavLink = 
   <div className="flex w-40 justify-between header-items">
     <li>
-      <NavLink to={'/'} className={'border-2 border-gray-300 font-semibold'}>Chart</NavLink>
+      <NavLink to={'/chart'} className={'border-2 border-gray-300 font-semibold'}>Chart</NavLink>
     </li>
     <li>
       <NavLink to={'/form'} className={'border-2 border-gray-300 font-semibold'}>Form</NavLink>

@@ -1,0 +1,35 @@
+[
+    {
+        "name":"CSE",
+        "Desire":40,
+        "Current":20,
+        "percentage":50,
+        "avgGrade":3.335,
+        "passingRate":70,
+        "attendanceRate":60,
+        "failureRate":13,
+        "graduationRate":87
+    },
+    {
+        "name":"EEE",
+        "Desire":45,
+        "Current":23,
+        "percentage":51.11,
+        "avgGrade":3.55,
+        "passingRate":80,
+        "attendanceRate":75,
+        "failureRate":9,
+        "graduationRate":91
+    },
+    {
+        "name":"CIVIL",
+        "Desire":50,
+        "Current":20,
+        "percentage":40,
+        "avgGrade":3.25,
+        "passingRate":50,
+        "attendanceRate":75,
+        "failureRate":28,
+        "graduationRate":72
+    }
+]
